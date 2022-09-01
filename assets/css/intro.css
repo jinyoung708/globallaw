@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+#header { position: fixed; left: 0; top: 0; width: 100%; text-align: center; border-bottom: 1px solid #e1e1e1;}
+#header::before {display: block; content:''; width: 100%; height: 50px; background-color: #00678f;}
+#header .logo {height: 127px; margin-bottom: 5px; border-bottom: 1px solid #e1e1e1; font-size: 0;}
+#header .logo::after {display: inline-block; content:''; width: 0; height: 100%; vertical-align: middle;}
+#header .logo a {display: inline-block; vertical-align: middle;}
+
+#content {padding-top: 183px; letter-spacing: -0.05em;}
+.title {margin: 55px 0 35px; text-align: center; font-size: 28px; font-weight: 500; color: #00688f;}
+.intro_bg {width: 788px; max-width: 100%; height: 394px; margin: 0 auto; background: url('../images/intro/bg_intro_pc.jpg') no-repeat center/cover; font-size: 0; text-align: center;}
+.intro_bg::after {display: inline-block; content:''; width: 0; height: 100%; vertical-align: middle;}
+.intro_list {display: inline-block; width: 350px; overflow: hidden; vertical-align: middle;}
+.intro_list > li {display: table; float: left;}
+.intro_list > li a {display: table-cell; width: 169px; height: 57px; border: 1px solid #fff; font-size: 11px; font-weight: 500; color: #fff; vertical-align: middle;}
+.intro_list > li:first-child {margin-right: 12px;}
+.intro_list > li:last-child {margin-top: 14px;}
+.intro_list > li:last-child a {width: 350px; height: 94px; font-size: 16px;}
+.intro_list > li:last-child a span {font-size: 26px;}
+.intro_list > li a span {display: block; font-size: 16px;}
+
+
+
+@media screen and (max-width:640px) {
+    #header {border-bottom: none; box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);}
+    #header::before {height: 34px;}
+    #header .logo {height: 132px; margin-bottom: 0; border-bottom: none;}
+    #header .logo a {width: 206px;}
+
+    .container {padding: 0 14%;}
+    .title {margin: 50px 0 20px; font-size: 18px;}
+    .intro_bg {height: auto; background: none;}
+    .intro_list {width: 100%; }
+    .intro_list > li {width: 100%;}
+    .intro_list > li a {width: 100%; height: 67px; font-size: 10px;}
+    .intro_list > li a span {font-size: 12px;}
+    .intro_list > li:last-child a {width: 100%; height: 67px;}
+    .intro_list > li:first-child {margin-right: 0; background: url('../images/intro/bg_intro_mo01.jpg') no-repeat center/cover;}
+    .intro_list > li:nth-child(2) {background: url('../images/intro/bg_intro_mo02.jpg') no-repeat center/cover;}
+    .intro_list > li:last-child a {font-size: 12px;}
+    .intro_list > li:last-child a span {font-size: 18px;}
+    .intro_list > li:nth-child(3) {margin-top: 0; background: url('../images/intro/bg_intro_mo03.jpg') no-repeat center/cover;}
+}
