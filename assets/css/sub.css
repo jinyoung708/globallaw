@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+
+#header {position: relative; background-color: #00678f;}
+#header .service_list {float: left; margin: 13px 0;}
+#header .service_list > li {float: left; margin-right: 30px;}
+#header .service_list > li a {font-size: 16px; color: #fff;}
+#header .search_box {position: relative; float: right; margin: 8px 0 7px;}
+#header .search_box input {width: 221px; height: 35px; padding-left: 10px; padding-right: 40px; color: #fff; border: 1px solid #c6c6c6; border-radius: 35px; background-color: #0176a3;}
+#header .search_box .search_btn {position: absolute; right: 14px; top: 8px; width: 18px; height: 19px; background: url('../images/common/ico_search.png') no-repeat center/contain;}
+
+
+.sub_top_box {margin-bottom: 80px; text-align: center;}
+.sub_top_box .head_logo {height: 127px;}
+.sub_top_box .head_logo::after {display: inline-block; content:''; width: 0; height: 100%; vertical-align: middle;}
+.sub_top_box .head_logo img {vertical-align: middle;}
+.sub_top_box .menu_box {border-top: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1;}
+.sub_top_box .menu_box .menu_list {display: flex; justify-content: center; border-left: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1;}
+.sub_top_box .menu_box .menu_list > li a {height: 61px; line-height: 61px; padding: 0 35px; font-size: 18px; font-weight: 500;}
+
+
+@media screen and (max-width:991px) {
+    #header .service_list {float: right; margin: 20px 0; margin-right: 10px;}
+    #header .search_box {padding: 9px 0; margin-right: 40px;}
+    #header .search_box input {transition: width 0.5s;}
+    #header .search_box input:not(:focus) {padding: 0; width: 18px; border: none; background: url('../images/common/ico_search.png') no-repeat center; font-size: 0;}
+    #header .search_box input:valid {width: 221px; height: 35px; padding-left: 10px; padding-right: 40px; color: #fff; border: 1px solid #c6c6c6; background: none; border-radius: 35px; font-size: 16px; background-color: #0176a3;}
+    #header .search_box .search_btn {display: none;}
+    #header .search_box input:focus + .search_btn,
+    #header .search_box input:valid + .search_btn {display: block; top: 16px;}
+    #header .m_gnb_btn {display: block; position: absolute; left: 39px; top: 21px; width: 32px; height: 24px; background: url('../images/common/ico_menu.png') no-repeat center/contain;}
+
+    .sub_top_box .menu_box {display: none;}
+}
+
+@media screen and (max-width:640px) {
+    #header .search_box {padding: 3px 0; margin-right: 25px;}
+    #header .service_list {margin: 16px 0;}
+    #header .service_list > li a {font-size: 13px;}
+    #header .search_box input,
+    #header .search_box input:valid {width: 100px;}
+    #header .search_box input:focus + .search_btn,
+    #header .search_box input:valid + .search_btn {top: 10px;}
+    #header .m_gnb_btn {left: 25px; top: 20px; width: 22px; height: 16px;}
+
+
+    .sub_top_box .head_logo {height: 105px;}
+    .sub_top_box .head_logo img {max-height: 32px;}
+
+}
