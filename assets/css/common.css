@@ -9,7 +9,9 @@
 #header .m_gnb_box .m_gnb {padding: 75px 0;}
 #header .m_gnb_box .m_gnb > li {border-bottom: 1px solid rgba(255, 255, 255, 0.1);}
 #header .m_gnb_box .m_gnb > li a {display: block; font-size: 16px; color: #fff; padding: 15px 20px;}
-#header .m_gnb_box .m_gnb .m_sub_gnb {display: none;}
+#header .m_gnb_box .m_gnb > li.active > a {background-color: #00a4ca;}
+#header .m_gnb_box .m_gnb .m_sub_gnb {display: none; padding: 10px 20px; background-color: #222;}
+#header .m_gnb_box .m_gnb .m_sub_gnb > li a {font-size: 14px; padding: 10px 20px;}
 #header .m_gnb_close {position: absolute; right: 20px; top: 20px; width: 25px; height: 25px; background: url('../images/common/ico_gnb_close.png') no-repeat center/contain;}
 
 #footer {background-color: #464646;}

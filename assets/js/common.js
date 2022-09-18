@@ -20,4 +20,14 @@ $(function(){
         
     });
     $(window).scroll();
+
+    $(".m_gnb > li > a").click(function(){
+        if($(this).parent("li").children().length > 1){
+            $(".m_sub_gnb").stop().slideUp(300);
+            $(".m_gnb > li").removeClass("active");
+            $(this).parent().addClass("active");
+            $(this).next(".m_sub_gnb").stop().slideDown(300);
+            return false;
+        }
+    });
 });
