@@ -30,4 +30,10 @@ $(function(){
             return false;
         }
     });
+
+    $(".menu_list > li").hover(function(){
+        $(this).find(".sub_gnb").stop().slideDown(300);
+    }, function(){
+        $(this).find(".sub_gnb").stop().slideUp(300);
+    });
 });
