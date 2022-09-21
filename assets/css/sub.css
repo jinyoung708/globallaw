@@ -206,15 +206,14 @@
 .matches_wrap .tab_con > div .list + p {margin-top: 65px;}
 
 
-.godang_wrap .txt_box1 {display: flex;}
+.godang_wrap .txt_box1 {font-size: 18px; font-weight: 300; color: #362f2d; text-align: justify;}
 .godang_wrap .txt_box1 em {padding-right: 5px; font-size: 27px; color: #00a4ca;}
-.godang_wrap .txt_box1 div:not(.img) {width: calc(100% - 360px); font-size: 18px; font-weight: 300; color: #362f2d; text-align: justify;}
-.godang_wrap .txt_box1 .img {width: 360px; font-size: 18px; font-weight: 300; text-align: center;}
+.godang_wrap .txt_box1 .img {float: right; margin-left: 90px; margin-bottom: 60px; font-size: 18px; font-weight: 300; text-align: center;}
 .godang_wrap .txt_box1 .img img {margin-bottom: 15px;}
 .godang_wrap .txt_box1 .img b {display: block;}
 .godang_wrap .txt_box2 {display: flex; margin-top: 60px; flex-direction: row-reverse; justify-content: space-between;}
-.godang_wrap .txt_box2 div:not(.img) {width: calc(100% - 600px); font-size: 18px; font-weight: 300; color: #362f2d; text-align: justify;}
-.godang_wrap .txt_box2 .img {width: 530px;}
+.godang_wrap .txt_box2 div:not(.img) {width: 50%; font-size: 18px; font-weight: 300; color: #362f2d; text-align: justify;}
+.godang_wrap .txt_box2 .img {width: 44.17%;}
 .godang_wrap .txt_box2 .img img {display: block;}
 .godang_wrap .txt_box2 .img span {display: flex; height: 38px; align-items: center; justify-content: center; margin-top: 3px; background-color: #ebebeb; font-size: 11px; color: #362f2d; text-align: center;}
 .godang_wrap .txt3 {margin-top: 60px; font-family: 'Nanum Myeongjo', serif; font-weight: 700; font-size: 23px; color: #00a4ca; text-align: center;}
@@ -364,6 +363,17 @@
     .matches_wrap .tab_con > div .list > li .left span, .matches_wrap .tab_con > div .list > li .right span {font-size: 8px;}
     .matches_wrap .tab_con > div .list > li .center .blue_box p {font-size: 13px;}
     .matches_wrap .tab_con > div .list > li .center .blue_box b {font-size: 28px;}
+
+
+    .godang_wrap .txt_box1 {font-size: 15px;}
+    .godang_wrap .txt_box1 em {padding-right: 0; font-size: 23px;}
+    .godang_wrap .txt_box1 .img {margin-left: 30px; font-size: 15px;}
+    .godang_wrap .txt_box2 {display: block; margin-top: 30px;}
+    .godang_wrap .txt_box2 div:not(.img) {width: 100%; font-size: 15px;}
+    .godang_wrap .txt_box2 .img {width: 100%; margin-top: 30px;}
+    .godang_wrap .txt_box2 .img img {width: 100%;}
+    .godang_wrap .txt_box2 .img span {font-size: 13px;}
+    .godang_wrap .txt3 {display: none;}
 }
 
 @media screen and (max-width:640px) {
@@ -467,6 +477,14 @@
     .matches_wrap .tab_con > div .list > li .center .blue_box p {font-size: 11px;}
     .matches_wrap .tab_con > div .list > li .center .blue_box b {font-size: 20px;}
     .matches_wrap .tab_con > div .list + p {margin-top: 43px;}
+
+
+    .godang_wrap .txt_box1 em {font-size: 17px;}
+    .godang_wrap .txt_box1 {font-size: 13px;}
+    .godang_wrap .txt_box1 .img {margin-left: 20px; margin-bottom: 30px; font-size: 12px;}
+    .godang_wrap .txt_box1 .img img {max-width: 157px;}
+    .godang_wrap .txt_box2 div:not(.img) {font-size: 13px;}
+    .godang_wrap .txt_box2 .img span {font-size: 12px;}
 }
 
 @media screen and (max-width:480px) { 
