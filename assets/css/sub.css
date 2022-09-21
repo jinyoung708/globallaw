@@ -187,12 +187,15 @@
 .matches_wrap .tab > li.active a, .matches_wrap .tab > li:hover a {background-color: #00688f;}
 .matches_wrap .tab_con > div {display: none;}
 .matches_wrap .tab_con > div.active {display: block;}
-.matches_wrap .tab_con > div .con_title {font-size: 23px; font-weight: 700; color: #5a5b5d; text-align: center;}
-.matches_wrap .tab_con > div .list > li {display: flex; align-items: center; background-color: #f8f8f8; margin-bottom: 30px; text-align: center;}
+.matches_wrap .tab_con > div .con_title {margin-bottom: 20px; font-size: 23px; font-weight: 700; color: #5a5b5d; text-align: center;}
+.matches_wrap .tab_con > div .list > li {display: flex; position: relative; padding: 60px 0; align-items: center; background-color: #f8f8f8; margin-bottom: 30px; text-align: center;}
+.matches_wrap .tab_con > div .list > li::before {display: inline-block; content:''; position: absolute; left: 50%; top: 0; width: 20px; height: 100%; margin-left: -10px; transform: skew(45deg); background-color: #fff;}
 .matches_wrap .tab_con > div .list > li:last-child {margin-bottom: 0;}
+.matches_wrap .tab_con > div .list > li > div {position: relative;}
 .matches_wrap .tab_con > div .list > li .left, .matches_wrap .tab_con > div .list > li .right {width: 40.8%;}
-.matches_wrap .tab_con > div .list > li .left p, .matches_wrap .tab_con > div .list > li .right p {font-size: 18px; font-weight: 700; color: #464646;}
+.matches_wrap .tab_con > div .list > li .left p, .matches_wrap .tab_con > div .list > li .right p {font-size: 18px; margin-bottom: 5px; font-weight: 700; color: #464646;}
 .matches_wrap .tab_con > div .list > li .left span, .matches_wrap .tab_con > div .list > li .right span {display: inline-block; height: 17px; line-height: 17px; padding: 0 10px; color: #fff; font-size: 11px; border-radius: 17px;}
+.matches_wrap .tab_con > div .list > li .left img, .matches_wrap .tab_con > div .list > li .right img {margin-bottom: 10px;}
 .matches_wrap .tab_con > div .list > li .left span {background-color: #00a4ca;}
 .matches_wrap .tab_con > div .list > li .right span {background-color: #5eb56a;}
 .matches_wrap .tab_con > div .list > li .center {width: 18.4%;}
@@ -200,9 +203,21 @@
 .matches_wrap .tab_con > div .list > li .center .blue_box b {font-size: 40px; font-weight: 700; color: #d7fe00;}
 .matches_wrap .tab_con > div .list > li .center .blue_box p {font-size: 18px; line-height: 1.2; font-weight: 700; color: #fff;}
 .matches_wrap .tab_con > div .list > li .center .blue_box p em {display: block; font-weight: 400;}
+.matches_wrap .tab_con > div .list + p {margin-top: 65px;}
 
 
-
+.godang_wrap .txt_box1 {display: flex;}
+.godang_wrap .txt_box1 em {padding-right: 5px; font-size: 27px; color: #00a4ca;}
+.godang_wrap .txt_box1 div:not(.img) {width: calc(100% - 360px); font-size: 18px; font-weight: 300; color: #362f2d; text-align: justify;}
+.godang_wrap .txt_box1 .img {width: 360px; font-size: 18px; font-weight: 300; text-align: center;}
+.godang_wrap .txt_box1 .img img {margin-bottom: 15px;}
+.godang_wrap .txt_box1 .img b {display: block;}
+.godang_wrap .txt_box2 {display: flex; margin-top: 60px; flex-direction: row-reverse; justify-content: space-between;}
+.godang_wrap .txt_box2 div:not(.img) {width: calc(100% - 600px); font-size: 18px; font-weight: 300; color: #362f2d; text-align: justify;}
+.godang_wrap .txt_box2 .img {width: 530px;}
+.godang_wrap .txt_box2 .img img {display: block;}
+.godang_wrap .txt_box2 .img span {display: flex; height: 38px; align-items: center; justify-content: center; margin-top: 3px; background-color: #ebebeb; font-size: 11px; color: #362f2d; text-align: center;}
+.godang_wrap .txt3 {margin-top: 60px; font-family: 'Nanum Myeongjo', serif; font-weight: 700; font-size: 23px; color: #00a4ca; text-align: center;}
 
 
 
@@ -334,6 +349,21 @@
     .party_wrap .tbl_body > .row > div:not(.gray_box) {padding: 15px 10px;}
     .party_wrap .tbl_body > .row > .gray_box {padding: 20px 10px;}
     .party_wrap .tbl_body > .row > .gray_box .inner {font-size: 13px;}
+
+
+    .matches_wrap .tab {margin: 0 40px 45px; flex-wrap: wrap;}
+    .matches_wrap .tab > li {width: calc((100% - 4px)/3);}
+    .matches_wrap .tab > li:nth-child(n+4) {width: calc((100% - 2px)/2); margin-top: 6px;}
+    .matches_wrap .tab > li a {height: 44px; font-size: 14px;}
+    .matches_wrap .tab_con > div .con_title {font-size: 16px;}
+    .matches_wrap .tab_con > div .list > li {margin-bottom: 20px;}
+    .matches_wrap .tab_con > div .list > li::before {width: 12px; margin-left: -6px; transform: skew(40deg);}
+    .matches_wrap .tab_con > div .list > li .left, .matches_wrap .tab_con > div .list > li .right {width: 37.5%;}
+    .matches_wrap .tab_con > div .list > li .center {width: 25%;}
+    .matches_wrap .tab_con > div .list > li .left p, .matches_wrap .tab_con > div .list > li .right p {font-size: 13px;}
+    .matches_wrap .tab_con > div .list > li .left span, .matches_wrap .tab_con > div .list > li .right span {font-size: 8px;}
+    .matches_wrap .tab_con > div .list > li .center .blue_box p {font-size: 13px;}
+    .matches_wrap .tab_con > div .list > li .center .blue_box b {font-size: 28px;}
 }
 
 @media screen and (max-width:640px) {
@@ -421,9 +451,22 @@
     .location_wrap .list > li .ttl {margin-bottom: 5px; font-size: 14px;}
     .location_wrap .list > li .txt {font-size: 12px;}
 
+
     .party_wrap .tbl_head > span {font-size: 12px;}
     .party_wrap .tbl_body > .row > div .inner {font-size: 13px;}
     .party_wrap .tbl_body > .row > .gray_box .inner {font-size: 11px;}
+
+
+    .matches_wrap .tab {margin: 20px 25px;}
+    .matches_wrap .tab > li a {font-size: 12px;}
+    .matches_wrap .tab_con > div .con_title {margin-bottom: 14px; font-size: 13px;}
+    .matches_wrap .tab_con > div .list > li {padding: 30px 0;}
+    .matches_wrap .tab_con > div .list > li .left, .matches_wrap .tab_con > div .list > li .right {padding: 5px;}
+    .matches_wrap .tab_con > div .list > li .left p, .matches_wrap .tab_con > div .list > li .right p {font-size: 11px;}
+    .matches_wrap .tab_con > div .list > li .left img, .matches_wrap .tab_con > div .list > li .right img {max-width: 63px; margin-bottom: 5px;}
+    .matches_wrap .tab_con > div .list > li .center .blue_box p {font-size: 11px;}
+    .matches_wrap .tab_con > div .list > li .center .blue_box b {font-size: 20px;}
+    .matches_wrap .tab_con > div .list + p {margin-top: 43px;}
 }
 
 @media screen and (max-width:480px) { 
