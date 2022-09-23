@@ -219,6 +219,35 @@
 .godang_wrap .txt3 {margin-top: 60px; font-family: 'Nanum Myeongjo', serif; font-weight: 700; font-size: 23px; color: #00a4ca; text-align: center;}
 
 
+.information_wrap {position: relative;}
+.information_wrap::before {display: block; content:''; position: absolute; z-index: -1; left: 0; top: 270px; width: 100%; height: 590px; background-color: #00a4ca;}
+.information_wrap .box1 {position: relative; padding-right: 590px; padding-left: 30px;}
+.information_wrap .box1 .t1 {margin-bottom: 20px; font-family: 'Nanum Myeongjo', serif; font-weight: 700; font-style: italic; font-size: 45px; color: #00a4ca;}
+.information_wrap .box1 .t2 {font-family: 'Nanum Myeongjo', serif; font-weight: 700; font-style: italic; font-size: 45px; color: #fff;}
+.information_wrap .box1 .img {position: absolute; right: 0; top: 0;}
+.information_wrap .box2 {display: flex; margin-top: 55px; margin-bottom: 90px; flex-wrap: wrap; flex-direction: column-reverse;}
+.information_wrap .box2 .txt_list {position: relative; padding-left: 30px; margin-bottom: 60px;}
+.information_wrap .box2 .txt_list::before {display: inline-block; content:''; width: 52px; height: 8px; margin-bottom: 50px; background-color: #00688f;}
+.information_wrap .box2 .txt_list > li {margin-bottom: 15px; color: #fff; font-size: 18px; font-weight: 500;}
+.information_wrap .box2 .txt_list > li:last-child {margin-bottom: 0;}
+.information_wrap .box2 .txt_list > li b {font-size: 23px;}
+.information_wrap .box3 .txt_box {margin-bottom: 30px;}
+.information_wrap .box3 .txt_box .ttl {margin-bottom: 5px; font-size: 23px; font-weight: 700; color: #00a4ca;}
+.information_wrap .box3 .txt_box .txt {font-size: 18px; font-weight: 300; color: #362f2d;}
+.information_wrap .box3 .table_box {margin-top: 90px;}
+.information_wrap .box3 .table_box + .txt_box {margin-top: 90px;}
+.information_wrap .box3 .table_box table {max-width: 880px; margin: 0 0 0 auto; border-top: 1px solid #7d7d7d; border-bottom: 1px solid #7d7d7d;}
+.information_wrap .box3 .table_box table thead th {height: 42px; font-size: 13px; font-weight: 500;}
+.information_wrap .box3 .table_box table tbody tr {border-top: 1px solid #d1d3d4;}
+.information_wrap .box3 .table_box table tbody th {border-right: 1px solid #d1d3d4; font-size: 13px; font-weight: 500;}
+.information_wrap .box3 .table_box table tbody td {padding: 11px 30px; font-size: 13px; line-height: 2; font-weight: 300;}
+.information_wrap .box3 .table_box table tfoot {border-top: none;}
+.information_wrap .box3 .table_box table tfoot tr {border-top: 1px solid #7d7d7d;}
+.information_wrap .box3 .table_box table tfoot th {padding: 11px 30px; font-size: 13px; font-weight: 500; vertical-align: top;}
+.information_wrap .box3 .table_box table tfoot td {padding: 11px 30px; font-size: 13px; line-height: 2; font-weight: 300; vertical-align: top;}
+.information_wrap .box3 .table_box table .btn {display: inline-block; min-width: 119px; height: 34px; line-height: 34px; padding: 0 20px; background-color: #00a4ca; font-size: 13px; font-weight: 500; color: #fff; text-align: center;}
+.information_wrap .box3 .table_box table .btn + .btn {margin-left: 7px;}
+
 
 
 @media screen and (max-width:991px) {
