@@ -302,6 +302,7 @@
                     setCookie("close","Y",1);   //기간( ex. 1은 하루, 7은 일주일)
                 }
                 $(".layer_popup_wrap").removeClass("show");
+                $("html").css('overflow','hidden');
             }
 
 
@@ -309,11 +310,14 @@
                 var cookiedata = document.cookie;
                 if(cookiedata.indexOf("close=Y")<0){
                     $(".layer_popup_wrap").addClass("show");
+                    $("html").css('overflow','hidden');
                 }else{
                     $(".layer_popup_wrap").removeClass("show");
+                    $("html").css('overflow','inherit');
                 }
                 $("#close").click(function(){
                     couponClose();
+                    $("html").css('overflow','inherit');
                 });
             });
         </script>
